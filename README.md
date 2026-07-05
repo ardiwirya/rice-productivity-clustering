@@ -4,6 +4,8 @@ Aplikasi web untuk mengelompokkan 22 kecamatan di Kabupaten Deli Serdang berdasa
 
 **Demo:** [Klasterisasi Padi](https://rice-clustering-deliserdang.streamlit.app/)
 
+**Dashboard**
+
 ![Dashboard](dashboard.png)
 
 ## Latar belakang
@@ -18,7 +20,10 @@ Dinas Pertanian menerbitkan laporan panen tahunan per kecamatan, tapi dari sprea
 4. **Klasterisasi** — kecamatan yang tersisa dikelompokkan dengan K-Means (2-3 klaster) dan diberi label Tinggi/Sedang/Rendah berdasarkan produktivitas aktualnya, jadi labelnya selalu konsisten dengan angka, bukan ID klaster acak.
 5. **Pelaporan** — hasil, grafik, dan rekomendasi kebijakan per klaster, semuanya bisa diekspor ke CSV.
 
+**Hasil Analisis**
+
 ![Hasil Analisis](result.png)
+![Hasil Analisis 2](result2.png)
 
 ## Fitur
 
