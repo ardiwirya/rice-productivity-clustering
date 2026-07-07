@@ -14,11 +14,11 @@ Dinas Pertanian menerbitkan laporan panen tahunan per kecamatan, tapi dari sprea
 
 ## Cara kerja
 
-1. **Ingesti data** — mem-parsing format laporan Dinas Pertanian (12 bulan × 3 variabel per kecamatan) langsung dari CSV, menghitung produktivitas sebagai Produksi ÷ Luas Panen, dan memvalidasinya terhadap rentang yang realistis (dengan koreksi otomatis untuk laporan yang satuannya kuintal, bukan ton).
-2. **Agregasi** — data bulanan digabung jadi total tahunan per kecamatan, menggunakan rata-rata tertimbang berdasarkan luas panen, bukan rata-rata sederhana dari rasio bulanan.
-3. **Deteksi anomali** — Isolation Forest memberi skor ke setiap kecamatan berdasarkan produktivitas, luas panen, dan volume produksi; persentase dengan skor terendah (bisa diatur, default 15%) ditandai sebagai anomali.
-4. **Klasterisasi** — kecamatan yang tersisa dikelompokkan dengan K-Means (2-3 klaster) dan diberi label Tinggi/Sedang/Rendah berdasarkan produktivitas aktualnya, jadi labelnya selalu konsisten dengan angka, bukan ID klaster acak.
-5. **Pelaporan** — hasil, grafik, dan rekomendasi kebijakan per klaster, semuanya bisa diekspor ke CSV.
+1. **Ingesti data** : Mem-parsing format laporan Dinas Pertanian (12 bulan × 3 variabel per kecamatan) langsung dari CSV, menghitung produktivitas sebagai Produksi ÷ Luas Panen, dan memvalidasinya terhadap rentang yang realistis (dengan koreksi otomatis untuk laporan yang satuannya kuintal, bukan ton).
+2. **Agregasi** : Data bulanan digabung jadi total tahunan per kecamatan, menggunakan rata-rata tertimbang berdasarkan luas panen, bukan rata-rata sederhana dari rasio bulanan.
+3. **Deteksi anomali** : Isolation Forest memberi skor ke setiap kecamatan berdasarkan produktivitas, luas panen, dan volume produksi; persentase dengan skor terendah (bisa diatur, default 15%) ditandai sebagai anomali.
+4. **Klasterisasi** : Kecamatan yang tersisa dikelompokkan dengan K-Means (2-3 klaster) dan diberi label Tinggi/Sedang/Rendah berdasarkan produktivitas aktualnya, jadi labelnya selalu konsisten dengan angka, bukan ID klaster acak.
+5. **Pelaporan** : Hasil, grafik, dan rekomendasi kebijakan per klaster, semuanya bisa diekspor ke CSV.
 
 **Hasil Analisis**
 
