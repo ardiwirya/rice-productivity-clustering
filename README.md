@@ -1,5 +1,5 @@
 # Klasterisasi Produktivitas Padi
-
+ 
 Aplikasi web untuk mengelompokkan 22 kecamatan di Kabupaten Deli Serdang berdasarkan produktivitas padi, sekaligus mendeteksi kecamatan dengan pola produksi yang tidak wajar, menggunakan Isolation Forest dan K-Means. Dibangun sebagai proyek skripsi (Teknik Informatika, Universitas Malikussaleh), dengan fokus mengubah lima tahun data mentah laporan Dinas Pertanian menjadi sesuatu yang bisa langsung dipakai untuk pengambilan kebijakan.
 
 **Demo:** [Klasterisasi Padi](https://rice-clustering-deliserdang.streamlit.app/)
